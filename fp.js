@@ -85,4 +85,36 @@
 //     if (num === 1) return 1;
 //     return fibonacciRecursive(num - 1) + fibonacciRecursive(num -2);
 // }
-// console.log(fibonacciRecursive(6))
+// console.log(fibonacciRecursive(1034))
+
+//CLOSURE
+// function makeAdj(adj){
+//     return function (noun){
+//         return adj + ' ' + noun;
+//     }
+// };
+// let a = makeAdj('myAdj');
+// let b = a('myNoun');
+// console.log(b);
+
+//FUNCTION COMPOSITION
+// let r = (ending)=> (wow)=> ending + wow;
+// let adore = r('i');
+// let awa = r(' love ');
+// let reply = r('');
+// let dad = (x)=> adore(awa(reply(x)));
+// console.log(dad('you'));
+
+//MUTATION (DANGEROUS);
+// let cities = ['madina','Mekkah', 'Istanbul'];
+// cities[0] = 'Sham';
+// console.log(cities);
+
+//NO MUTATION 👍🏻
+// let oldCity = ['madina','Mekkah', 'Istanbul'];
+// let newCity = oldCity.map(city => {
+//     if(city === 'madina') return 'MADINA'
+//     if(city === 'Mekkah') return 'MEKKAH'
+//     return city
+// })
+// console.log(newCity)
