@@ -109,20 +109,28 @@
 // // let b = a('myNoun');
 // console.log(a);
 //CLOSURE-2
+
+//Currying: A function returning another function that might return another function, but every returned function must take only one parameter at a time.
+//
+//Partial application: A function returning another function that might return another function, but each returned function can take several parameters.
+
 // function add(n) {
-// 	return function (num){
-// 	return	n + num
+// 	return function (num,next){
+// 	return	(n + num) - next
 // 	};
 // };
-// console.log(add(10)(90));
+// console.log(add(10)(90,3));
 
 //FUNCTION COMPOSITION
-// let r = (ending)=> (wow)=> ending + wow;
-// let adore = r('i');
-// let awa = r(' love ');
-// let reply = r('');
-// let dad = (x)=> adore(awa(reply(x)));
-// console.log(dad('you'));
+// let r = function (ending){
+//     return function(mid){
+//         return ending +' '+ mid
+//     }
+// }
+
+// let res = r('end');
+// let res2 = res('mid');
+// console.log(res2);
 
 //MUTATION (DANGEROUS);
 // let cities = ['madina','Mekkah', 'Istanbul'];
