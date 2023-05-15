@@ -99,15 +99,22 @@
 // }
 // console.log(fibonacciRecursive(1034))
 
-//CLOSURE
+//CLOSURE-1
 // function makeAdj(adj){
 //     return function (noun){
 //         return adj + ' ' + noun;
 //     }
 // };
-// let a = makeAdj('myAdj');
-// let b = a('myNoun');
-// console.log(b);
+// let a = makeAdj('myAdj')('myNoun')
+// // let b = a('myNoun');
+// console.log(a);
+//CLOSURE-2
+// function add(n) {
+// 	return function (num){
+// 	return	n + num
+// 	};
+// };
+// console.log(add(10)(90));
 
 //FUNCTION COMPOSITION
 // let r = (ending)=> (wow)=> ending + wow;
@@ -166,3 +173,4 @@
 
 // let total = cart.reduce((acc, val) => acc + (val.quantity * val.price), 0);
 // console.log(total);
+
