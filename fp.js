@@ -62,6 +62,18 @@
 // }
 // };
 // console.log(recursiveFact(5));
+//RECURSION-3
+// function random(result=0, count=0){
+//     if(result === 5){
+//         console.log(`Result is ${result}`);
+//         console.log(`Counted ${count} time!`);
+//         return;
+//     }
+//     result = Math.floor(Math.random() * 10);
+//     count++
+//     random(result,count)
+//     };
+//     random()
 
 // ITERATIVE IS NOT EASY😵
 // function fibonacciIterative(n) {
@@ -118,3 +130,39 @@
 //     return city
 // })
 // console.log(newCity)
+
+// INTERVIEW TASK CODES!✊
+// const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+// function sum(arr) {
+// 	if (arr.length === 1) {
+// 		//base case
+// 		return 0;
+// 	}
+// 	if (arr.length > 1) {
+// 		//recursive case
+// 		return arr[0] + sum(arr.slice(1));
+// 	}
+// };
+// console.log(sum(arr));
+
+// function factorial(num) {
+// 	if (num === 1) return 1;
+// 	if (num > 1) return num * factorial(num - 1)
+// }
+// console.log(factorial(5));
+
+// const sum = arr.reduce((acc, val) => acc + val);
+// console.log(sum);
+
+//Write a JavaScript function that calculates the total cost of all 'Fruit' items in the cart. Please ensure your function adheres to functional programming principles and avoids changing the original 'cart' array.
+// let cart = [
+// 	{ name: "Apple", category: "Fruit", quantity: 10, price: 0.5 },
+// 	{ name: "Orange", category: "Fruit", quantity: 5, price: 0.8 },
+// 	{ name: "Broccoli", category: "Vegetable", quantity: 2, price: 1.5 },
+// 	{ name: "Carrot", category: "Vegetable", quantity: 8, price: 0.2 },
+// 	{ name: "Chicken", category: "Meat", quantity: 1, price: 10 },
+// ];
+
+// let total = cart.reduce((acc, val) => acc + (val.quantity * val.price), 0);
+// console.log(total);
